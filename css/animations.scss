@@ -1,0 +1,15 @@
+
+
+.animation {
+  -webkit-animation: animation 0.5s;
+  animation: animation 0.5s;
+}
+
+
+
+@-webkit-keyframes animation {
+
+0% {left: -900px};
+100% {left: 0px};
+
+}
