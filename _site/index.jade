@@ -3,6 +3,7 @@ html(lang='en')
   head
     title Designer/Developer/Thinker
     meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel="stylesheet", type="text/css", href="/Designer/css/app.css")
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Passion+One:400,700,900' rel='stylesheet' type='text/css'>
@@ -11,11 +12,19 @@ html(lang='en')
   body
     header: .logo
         .name Lysenko
+        .burger
+          span
         nav
           a(href="#") ABOUT
           a(href="#") WORK
           a(href="#") CONTACT
+          
 .main-image
+  .kicker
+    nav
+      a(href="#") WORK
+      a(href="#") ABOUT
+      a(href="#") CONTACT
   .header
     .header-1 DESIGNER
     .header-2 DEVELOPER
@@ -23,4 +32,5 @@ html(lang='en')
 
 
     
+    script(src="scripts/jquery-1.10.2.js")
     script(src="scripts/functions.js")

@@ -9,7 +9,7 @@ body
 header
   position: relative
   z-index: 10
-  box-shadow: 0px 3px 15px black
+  box-shadow: 0px 2px 25px black
   max-width: 1200px
   height: 55px
   margin: 0px auto
@@ -20,11 +20,65 @@ header
     top: -4px
     left: 10px
 
-  .logo
-    color: white
-    font:
-      size: 35px
-      family: 'Pacifico', cursive
+  .burger
+    float: right
+    position: relative
+    left: -10px
+    width: 50px
+    height: 50px
+    display: flex
+    align-items: center
+    cursor: pointer
+
+    @media (min-width: 542px)
+      top: -100px
+
+
+
+
+    span,
+    span:before,
+    span:after
+      @media (min-width: 542px )
+        background: transparent !important
+
+
+    span,
+    span:before,
+    span:after
+      content:" "
+      display: block
+      width: 50px
+      height: 2px
+      background: white
+      position: relative
+      transition: all 0.3s ease-out
+
+    span::before
+      top: 12px
+
+    span::after
+      bottom: 14px
+
+
+.is-open
+  span
+    background: transparent !important
+
+  span::before
+    transform: rotate(45deg)
+    top: 0px !important
+
+  span::after
+    transform: rotate(-45deg)
+    top: 0px
+
+
+.logo
+  color: white
+  font:
+    size: 35px
+    family: 'Pacifico', cursive
 
   nav
     float: right
@@ -43,17 +97,39 @@ header
         weight: bold
 
 
-// Main image
-
 .main-image
-  box-shadow: 0px 5px 25px black
+  position: relative
+  box-shadow: 0px 2px 25px black
   max-width: 1200px
   height: 533px
   margin: 0px auto
   background: url('../pictures/guy.jpg')
 
+  .kicker
+    position: absolute
+    box-shadow: 0px 2px 25px black
+    width: 100%
+    height: 0px
+    background: $red
+    left: 0px
+    transition: all 0.2s ease-out
+    display: flex
+    justify-content: center
+    align-items: center
 
-// headers
+    nav
+      width: 250px
+      display: flex
+      justify-content: space-between
+      a
+        color: transparent
+        text-decoration: none
+        font:
+          size: 15px
+          family: 'Open Sans', sans-serif !important
+
+        &:hover
+          color: $blue !important
 
 .header
   float: right
@@ -71,11 +147,39 @@ header
       style: italic
   .header-2
     @extend .header-1
-    color: rgb(183, 231, 244) !important
+    color: $blue !important
     -webkit-animation-delay: 0.2s !important
     animation-delay: 0.2s!important
   .header-3
     @extend .header-1
-    color: rgb(183, 231, 244) !important
+    color: $blue !important
     -webkit-animation-delay: 0.4s !important
     animation-delay: 0.4s !important
+
+// Responsive headers
+
+@media (max-width: 840px)
+
+  .main-image
+    display: flex
+    justify-content: center
+
+    .header-1, header-2, header-3
+      font-size: 80px
+
+      @media (max-width: 440px)
+        font-size: 65px
+        line-height: 50px
+      @media (max-width: 330px)
+        font-size: 59px
+
+  .logo
+    nav
+      a
+        @media (max-width: 541px)
+          display: none
+
+  header
+    .name
+      @media (max-width: 432px)
+        //margin: 0px 135px
