@@ -311,6 +311,9 @@ header .burger span::after {
     justify-content: center;
     -ms-flex-pack: center;
   }
+  .main-image .header {
+    margin: 130px 0px;
+  }
   .main-image .header-1, .main-image .header .header-2, .header .main-image .header-2, .main-image .header .header-3, .header .main-image .header-3, .main-image header-2, .main-image header-3 {
     font-size: 80px;
   }
