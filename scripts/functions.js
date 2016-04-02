@@ -1,11 +1,19 @@
+//
+// window.addEventListener("load", function() {
+//
+//    document.querySelector('.header-1').classList.add('animation');
+//    document.querySelector('.header-2').classList.add('animation');
+//    document.querySelector('.header-3').classList.add('animation');
+//
+//   });
 
-window.addEventListener("load", function() {
+$(document).ready(function () {
 
    document.querySelector('.header-1').classList.add('animation');
    document.querySelector('.header-2').classList.add('animation');
    document.querySelector('.header-3').classList.add('animation');
 
-  });
+})
 
 var burger = document.querySelector('.burger');
 

@@ -1,5 +1,6 @@
 @import colors.sass
 @import animations.scss
+@import 'about/about.sass'
 
 
 body
@@ -21,9 +22,8 @@ header
     left: 10px
 
   .burger
-    float: right
-    position: relative
-    left: -10px
+    position: absolute
+    left: 80%
     width: 50px
     height: 50px
     display: flex
@@ -117,6 +117,9 @@ header
     justify-content: center
     align-items: center
 
+    @media (min-width: 542px)
+      display: none
+
     nav
       width: 250px
       display: flex
@@ -170,8 +173,8 @@ header
       @media (max-width: 440px)
         font-size: 65px
         line-height: 50px
-      @media (max-width: 330px)
-        font-size: 59px
+      @media (max-width: 360px)
+        font-size: 54px
 
   .logo
     nav
