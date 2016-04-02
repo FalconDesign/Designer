@@ -52,13 +52,13 @@ header .burger {
   cursor: pointer;
 }
 
-@media (min-width: 542px) {
+@media only screen and (min-width: 542px) {
   header .burger {
     top: -100px;
   }
 }
 
-@media (min-width: 542px) {
+@media only screen and (min-width: 542px) {
   header .burger span,
   header .burger span:before,
   header .burger span:after {
@@ -145,7 +145,7 @@ header .burger span::after {
   align-items: center;
 }
 
-@media (min-width: 542px) {
+@media only screen and (min-width: 542px) {
   .main-image .kicker {
     display: none;
   }
@@ -196,7 +196,7 @@ header .burger span::after {
   animation-delay: 0.4s !important;
 }
 
-@media (max-width: 840px) {
+@media only screen and (max-width: 840px) {
   .main-image {
     display: flex;
     justify-content: center;
@@ -206,20 +206,20 @@ header .burger span::after {
   }
 }
 
-@media (max-width: 840px) and (max-width: 440px) {
+@media only screen and (max-width: 840px) and (max-width: 440px) {
   .main-image .header-1, .main-image .header .header-2, .header .main-image .header-2, .main-image .header .header-3, .header .main-image .header-3, .main-image header-2, .main-image header-3 {
     font-size: 65px;
     line-height: 50px;
   }
 }
 
-@media (max-width: 840px) and (max-width: 360px) {
+@media only screen and (max-width: 840px) and (max-width: 360px) {
   .main-image .header-1, .main-image .header .header-2, .header .main-image .header-2, .main-image .header .header-3, .header .main-image .header-3, .main-image header-2, .main-image header-3 {
     font-size: 54px;
   }
 }
 
-@media (max-width: 840px) and (max-width: 541px) {
+@media only screen and (max-width: 840px) and (max-width: 541px) {
   .logo nav a {
     display: none;
   }

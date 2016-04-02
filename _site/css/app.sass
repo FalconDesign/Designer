@@ -30,7 +30,7 @@ header
     align-items: center
     cursor: pointer
 
-    @media (min-width: 542px)
+    @media only screen and (min-width: 542px)
       top: -100px
 
 
@@ -39,7 +39,7 @@ header
     span,
     span:before,
     span:after
-      @media (min-width: 542px )
+      @media only screen and (min-width: 542px )
         background: transparent !important
 
 
@@ -117,7 +117,7 @@ header
     justify-content: center
     align-items: center
 
-    @media (min-width: 542px)
+    @media only screen and (min-width: 542px)
       display: none
 
     nav
@@ -161,7 +161,7 @@ header
 
 // Responsive headers
 
-@media (max-width: 840px)
+@media only screen and (max-width: 840px)
 
   .main-image
     display: flex
@@ -170,19 +170,19 @@ header
     .header-1, header-2, header-3
       font-size: 80px
 
-      @media (max-width: 440px)
+      @media only screen and (max-width: 440px)
         font-size: 65px
         line-height: 50px
-      @media (max-width: 360px)
+      @media only screen and (max-width: 360px)
         font-size: 54px
 
   .logo
     nav
       a
-        @media (max-width: 541px)
+        @media only screen and (max-width: 541px)
           display: none
 
   header
     .name
-      @media (max-width: 432px)
+      @media only screen and (max-width: 432px)
         //margin: 0px 135px
