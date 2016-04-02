@@ -21,26 +21,29 @@ burger.addEventListener('click', hoverBurger);
 
 function hoverBurger() {
   if (burger.classList.contains('is-open')) {
-    burger.classList.remove('is-open');
+    $('.burger').removeClass('is-open');
 
     var kicker = document.querySelector('.kicker');
-    kicker.style = 'height: 0px';
+    $('.kicker').css('height', '0px');
 
-    var allAnckers = document.querySelectorAll('.kicker nav a');
-
-    for (var i = 0; i < allAnckers.length; i++) {
-      allAnckers[i].style = 'color: transparent;';
-    }
+    $('.kicker nav a').css('color','transparent');
+    // var allAnckers = document.querySelectorAll('.kicker nav a');
+    //
+    // for (var i = 0; i < allAnckers.length; i++) {
+    //   allAnckers[i].style = 'color: transparent;';
+    // }
 
   } else if (!burger.classList.contains('is-open')) {
-    burger.classList.add('is-open');
+    $('.burger').addClass('is-open');
 
     var kicker = document.querySelector('.kicker');
-    kicker.style = 'height: 90px';
+    $('.kicker').css('height', '90px');
 
-    var allAnckers = document.querySelectorAll('.kicker nav a');
-    for (var i = 0; i < allAnckers.length; i++) {
-      allAnckers[i].style = 'color: white;';
-    }
+    $('.kicker nav a').css('color','white');
+
+    // var allAnckers = document.querySelectorAll('.kicker nav a');
+    // for (var i = 0; i < allAnckers.length; i++) {
+    //   allAnckers[i].style = 'color: white;';
+    // }
   }
 }

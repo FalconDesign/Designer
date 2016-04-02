@@ -1,6 +1,7 @@
 @import colors.sass
 @import animations.scss
 @import 'about/about.sass'
+@import 'bourbon'
 
 
 body
@@ -26,8 +27,8 @@ header
     left: 80%
     width: 50px
     height: 50px
-    display: flex
-    align-items: center
+    +display(flex)
+    +align-items(center)
     cursor: pointer
 
     @media only screen and (min-width: 542px)
@@ -47,18 +48,20 @@ header
     span:before,
     span:after
       content:" "
-      display: block
+      +display(block)
       width: 50px
       height: 2px
       background: white
       position: relative
-      transition: all 0.3s ease-out
+      @include transition(all 0.3s ease-out)
 
     span::before
       top: 12px
+      @include transition(all 0.3s ease-out)
 
     span::after
       bottom: 14px
+      @include transition(all 0.3s ease-out)
 
 
 .is-open
@@ -66,11 +69,11 @@ header
     background: transparent !important
 
   span::before
-    transform: rotate(45deg)
+    +transform(rotate(45deg))
     top: 0px !important
 
   span::after
-    transform: rotate(-45deg)
+    +transform(rotate(-45deg))
     top: 0px
 
 
@@ -81,14 +84,16 @@ header
     family: 'Pacifico', cursive
 
   nav
+    +display(flex)
+    +justify-content(space-between)
     float: right
     width: 222px
-    display: flex
-    justify-content: space-between
     margin-right: 40px
     margin-top: 21px
 
+
     a
+      +display(flex)
       color: white
       text-decoration: none
       font:
@@ -112,19 +117,20 @@ header
     height: 0px
     background: $red
     left: 0px
-    transition: all 0.2s ease-out
-    display: flex
-    justify-content: center
-    align-items: center
+    +transition(all 0.2s ease-out)
+    +display(flex)
+    +justify-content(center)
+    +align-items(center)
 
     @media only screen and (min-width: 542px)
       display: none
 
     nav
       width: 250px
-      display: flex
-      justify-content: space-between
+      +display(flex)
+      +justify-content(space-between)
       a
+        +display(flex)
         color: transparent
         text-decoration: none
         font:
@@ -164,16 +170,18 @@ header
 @media only screen and (max-width: 840px)
 
   .main-image
-    display: flex
-    justify-content: center
+    +display(flex)
+    +justify-content(center)
 
     .header-1, header-2, header-3
       font-size: 80px
 
       @media only screen and (max-width: 440px)
+        +display(flex)
         font-size: 65px
         line-height: 50px
       @media only screen and (max-width: 360px)
+        +display(flex)
         font-size: 54px
 
   .logo
