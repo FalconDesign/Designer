@@ -26,7 +26,10 @@ function hoverBurger() {
     var kicker = document.querySelector('.kicker');
     $('.kicker').css('height', '0px');
 
-    $('.kicker nav a').css('color','transparent');
+    $('.kicker nav a').css({
+      color:'transparent',
+      top:'-50px'
+    });
     // var allAnckers = document.querySelectorAll('.kicker nav a');
     //
     // for (var i = 0; i < allAnckers.length; i++) {
@@ -39,7 +42,10 @@ function hoverBurger() {
     var kicker = document.querySelector('.kicker');
     $('.kicker').css('height', '90px');
 
-    $('.kicker nav a').css('color','white');
+    $('.kicker nav a').css({
+      color: 'white',
+      top: '0px'
+    });
 
     // var allAnckers = document.querySelectorAll('.kicker nav a');
     // for (var i = 0; i < allAnckers.length; i++) {
