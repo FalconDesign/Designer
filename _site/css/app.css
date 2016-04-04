@@ -228,6 +228,13 @@ section .vine {
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: center;
     -moz-box-pack: center;
     box-pack: center;
@@ -238,6 +245,10 @@ section .vine {
     justify-content: center;
     -ms-flex-pack: center;
   }
+}
+
+section .vine iframe {
+  width: 300px;
 }
 
 section .container {
@@ -255,7 +266,7 @@ section .container::after {
 @media (max-width: 768px) {
   section .container {
     position: absolute;
-    top: 570px;
+    top: 520px;
     width: 90% !important;
     right: 20px !important;
   }
@@ -323,6 +334,7 @@ section .container .img-4 {
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0px 0px 5px black;
+  text-decoration: none;
 }
 
 section .container .img-1:hover .thumb-overlay,
@@ -531,6 +543,12 @@ header .burger span::after {
   background-repeat: no-repeat;
   background-position: -40px 0px;
   background-color: #03bed9;
+}
+
+@media (max-width: 500px) {
+  .main-image {
+    background-position: -250px -100px !important;
+  }
 }
 
 .main-image .blue-box {

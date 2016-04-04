@@ -26,7 +26,13 @@ section
       left: 0px !important
       width: 100% !important
       +display(flex)
+      +flex-wrap(wrap)
       +justify-content(center)
+
+    iframe
+      width: 300px
+
+
 
 
 
@@ -39,7 +45,7 @@ section
 
     @media (max-width: 768px)
       position: absolute
-      top: 570px
+      top: 520px
       width: 90% !important
       right: 20px !important
 
@@ -74,6 +80,7 @@ section
       background-repeat: no-repeat
       background-size: cover
       box-shadow: 0px 0px 5px black
+      text-decoration: none
 
       &:hover
         .thumb-overlay
