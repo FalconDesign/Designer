@@ -28,13 +28,8 @@ function hoverBurger() {
 
     $('.kicker nav a').css({
       color:'transparent',
-      top:'-50px'
+      top:'90px'
     });
-    // var allAnckers = document.querySelectorAll('.kicker nav a');
-    //
-    // for (var i = 0; i < allAnckers.length; i++) {
-    //   allAnckers[i].style = 'color: transparent;';
-    // }
 
   } else if (!burger.classList.contains('is-open')) {
     $('.burger').addClass('is-open');
@@ -46,10 +41,40 @@ function hoverBurger() {
       color: 'white',
       top: '0px'
     });
-
-    // var allAnckers = document.querySelectorAll('.kicker nav a');
-    // for (var i = 0; i < allAnckers.length; i++) {
-    //   allAnckers[i].style = 'color: white;';
-    // }
   }
 }
+
+$(function () {
+
+$('.thumb-overlay:eq(0)').on('mouseover', posit);
+
+function posit() {
+  $('.before').css('background', 'rgb(16, 224, 175)');
+};
+
+$('.thumb-overlay:eq(1)').on('mouseover', posit_1);
+
+function posit_1() {
+  $('.before').css('background', 'rgb(254, 186, 229)');
+};
+
+
+$('.thumb-overlay:eq(2)').on('mouseover', posit_2);
+
+function posit_2() {
+  $('.before').css('background', 'rgb(41, 229, 255)');
+};
+
+$('.thumb-overlay:eq(3)').on('mouseover', posit_3);
+
+function posit_3() {
+  $('.before').css('background', 'rgb(254, 168, 79)');
+};
+
+$('.before').on('mouseover', transp);
+
+function transp() {
+  $('.before').css('background', 'transparent');
+};
+
+});

@@ -1,24 +1,97 @@
+@import 'bourbon'
 section
   padding-top: 1px
   position: relative
-  z-index: -5
   max-width: 1200px
   height: 612px
   background: url('../pictures/bg.jpg')
   margin: 1px auto
   box-shadow: 0px 0px 20px black
+  .before
+    +position(absolute, 0px 0px 0px 0px)
+    opacity: 0.7
+
+  @media (max-width: 768px)
+    height: 1200px
+  @media (max-width: 500px)
+    height: 1650px
+
 
   .vine
     position: absolute
     z-index: 5
     top: 65px
-    left: 53px
+    left: 45px
+    @media (max-width: 768px)
+      left: 0px !important
+      width: 100% !important
+      +display(flex)
+      +justify-content(center)
 
-  .blue-bg
-    max-width: 935px
-    height: 545px
-    background: $about-blue
-    margin-left: 200px
-    margin-top: 35px
-    opacity: 0.7
-    box-shadow: 0px 2px 7px black
+
+
+
+  .container
+    margin-left: 390px
+    margin-top: 60px
+    max-width: 755px
+    +clearfix
+
+    @media (max-width: 768px)
+      position: absolute
+      top: 570px
+      width: 90% !important
+      right: 20px !important
+
+    .thumb-overlay
+      z-index: 999
+      +position(absolute, 0px 0px 0px 0px)
+      background: gray
+      opacity: 0
+      +transition
+      color: transparent
+      font:
+        size: 35px
+        family: Impact
+        weight: bolder
+      +display(flex)
+      +justify-content(center)
+      +align-items(center)
+      @media (max-width: 890px) and (min-width:768px )
+        font-size: 29px
+
+
+    .img-1,
+    .img-2,
+    .img-3,
+    .img-4
+      position: relative
+      width: 48%
+      height: 234px
+      display: block
+      float: left
+      margin: 6px
+      background-repeat: no-repeat
+      background-size: cover
+      box-shadow: 0px 0px 5px black
+
+      &:hover
+        .thumb-overlay
+          color: #333333
+          opacity: 1
+          @extend %flip
+
+
+
+
+
+      @media (max-width: 1110px)
+        width: 45% !important
+
+      @media (max-width: 500px)
+        width: 100% !important
+
+
+@each $picture in img-1, img-2, img-3, img-4
+  .#{$picture}
+    background: url('../pictures/#{$picture}.jpg')
