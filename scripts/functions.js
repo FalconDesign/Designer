@@ -68,7 +68,7 @@ function posit_2() {
 $('.thumb-overlay:eq(3)').on('mouseover', posit_3);
 
 function posit_3() {
-  $('.before').css('background', 'rgb(254, 168, 79)');
+  $('.before').css('background', '#fea84f');
 };
 
 $('.before').on('mouseover', transp);

@@ -179,7 +179,97 @@ section .container .img-4:hover .thumb-overlay {
   }
 }
 
+.contact-section {
+  position: relative;
+  max-width: 1200px;
+  height: 500px;
+  margin: 0px auto;
+  padding-top: 1px;
+  background: url("../pictures/women.jpg") center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 0px 20px black;
+}
+
+.contact-section .letter {
+  margin-left: 30px;
+  width: 425px;
+  height: 430px;
+}
+
+.contact-section .letter .let {
+  padding-top: 1px;
+  position: relative;
+  top: 0px;
+  z-index: 1;
+  margin-top: -200px;
+  margin-left: 35px;
+  background: #fffab5;
+  -webkit-transition: 500ms ease-out;
+  -moz-transition: 500ms ease-out;
+  transition: 500ms ease-out;
+}
+
+.contact-section .letter .let .form {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 18px;
+}
+
+.contact-section .letter .let .form .dear {
+  font-size: 23px;
+}
+
+.contact-section .letter .let .form form textarea {
+  color: #2a7eb4;
+  width: 90%;
+  height: 160px;
+  position: relative;
+  margin-left: 15px;
+  margin-top: 10px;
+  background: transparent;
+  border: 1px solid #cd8e00;
+}
+
+.contact-section .letter .let .form form textarea:focus, .contact-section .letter .let .form form textarea:active {
+  outline: none !important;
+}
+
+.contact-section .letter .let .form form input {
+  border: none;
+  border-bottom: 1px solid #cd8e00;
+  color: #2a7eb4;
+  background: transparent;
+}
+
+.contact-section .letter .let .form form input:focus, .contact-section .letter .let .form form input:active {
+  outline: none !important;
+}
+
+.contact-section .letter .let:hover {
+  top: -70px;
+}
+
+.contact-section .letter .for-g {
+  position: relative;
+  z-index: 100;
+  top: -190px;
+}
+
+.contact-section .letter .for-g-2 {
+  position: relative;
+  z-index: 100;
+  top: -190px;
+}
+
+.contact-section .letter .bottom {
+  position: relative;
+}
+
 section {
+  z-index: 2;
   padding-top: 1px;
   position: relative;
   max-width: 1200px;
@@ -533,7 +623,7 @@ header .burger span::after {
 }
 
 .main-image {
-  z-index: 2;
+  z-index: 4;
   position: relative;
   box-shadow: 0px 2px 25px black;
   max-width: 1200px;
