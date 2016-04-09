@@ -78,3 +78,59 @@ function transp() {
 };
 
 });
+
+//
+// $(function () {
+//   $('.inp').on('input', addRow);
+//
+//   function addRow() {
+//
+//   var text =   $('.inp')
+//
+//     if (text.val().length < 50) {
+//
+//       $('.underline_2').remove();
+//
+//     } else if (text.val().length == 50 && text.val().length < 51) {
+//
+//       text.attr('rows','3');
+//
+//       $('.mailWrapper').append('<div class="underline_2"></div>');
+//
+//
+//     };
+//
+//   };
+//
+// })
+
+
+$(function () {
+
+$('.letter, .fore-ground').on('mouseover', letterUp);
+$('.letter, .fore-ground').on('mouseout', letterDown);
+
+function letterUp() {
+
+$('.letter').css({
+
+top: '100px'
+
+});
+
+};
+
+function letterDown() {
+
+$('.letter').css({
+
+top: '150px'
+
+});
+
+};
+
+
+
+
+});

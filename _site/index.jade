@@ -22,7 +22,6 @@ html(lang='en')
           a(href="#") CONTACT
           
 .main-image
-  .blue-box
   .kicker
     nav
       a(href="#") WORK
@@ -38,7 +37,7 @@ html(lang='en')
 section.work
   .before
   .vine
-    <iframe src="https://vine.co/v/OtWiVlLLUKZ/embed/postcard" width="300" height="300" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
+    //- <iframe src="https://vine.co/v/OtWiVlLLUKZ/embed/postcard" width="300" height="300" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
   .container
     a(href="#").img-1: .thumb-overlay Lorem Ipsum
     a(href="#").img-2: .thumb-overlay Lorem Ipsum
@@ -50,32 +49,35 @@ section.work
 
 
 .contact-section
+  .back-ground
+    img(src="pictures/neon-bg.png")
   .letter
-    .back
-      .top
-        img(src="pictures/envelope_cover_in.png")
-      .bottom
-        img(src="pictures/envelope_in (1).png")  
-      .let
-        .form 
-          .dear Dear Dmtiry Lysenko...
-          form
-            | My name is
-            input(type='text')
-            | , you can Email me back at 
-            input(type="text")
-            |. I would like 
-            | to :
-            textarea
-            
-          
-        
-        img(src="pictures/letter.png")
-      .for-g
-        img(src="pictures/envelope_out_top.png")
-      .for-g-2
-        img(src="pictures/envelope_out_bottom.png")
-        
+    img(src="pictures/letter.png")
+    .letter-content
+      .dear-dl Dear Dmitry...
+      .linewrapper
+        .line
+          .text My name is...&nbsp;
+          .text.textFillsWidth
+            .textContent
+              input(type="text", name='name')
+              .underline
+          .text , ucan mail
+      .linewrapper_2
+        .line
+          .text me back at&nbsp;
+          .text.textFillsWidth
+            .textContent
+              input(type="text", name='name')
+              .underline
+          .text . I would like to
+      .mailWrapper
+        textarea.inp
+        .underline
+        .underline_3
+        button.btn.btn-success(type='submit') Send
+  .fore-ground
+    img(src="pictures/neon-fore.png")      
           
 
 

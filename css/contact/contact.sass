@@ -1,9 +1,17 @@
 @import bourbon
 
+
+/*.textFillsWidth
+  width: 100%*/
+
+
+
+
+
 .contact-section
   position: relative
   max-width: 1200px
-  height: 500px
+  height: 548px
   margin: 0px auto
   padding-top: 1px
   background: url('../pictures/women.jpg') center center
@@ -13,71 +21,123 @@
   box-shadow: 0px 0px 20px black
 
   .letter
+    display: table
+    position: relative
+    left: 70px
+    top: 150px
+    +transition(400ms, linear)
+
+    .letter-content
+      width: 339px
+      position: absolute
+      top: 20px
+      left: 10px
+      font:
+        size: 22px
+
+      .dear-dl
+        font-family:'Kaushan Script', cursive
+
+      .linewrapper
+        display: table
+        position: relative
+        left: 10px
+
+        .line
+          display: table-row
+
+          .text
+            display: table-cell
+            font-family:'Kaushan Script', cursive
+            font-size: 17px
 
 
+          .textFillsWidth
+            width: 50%
+            display: table-cell
 
-    margin-left: 30px
-    width: 425px
-    height: 430px
+            .textContent
+              position: relative
+              margin-right: 2px
 
-    .let
-      padding-top: 1px
-      position: relative
-      top: 0px
-      z-index: 1
-      margin-top: -200px
-      margin-left: 35px
-      background: #fffab5
-      +transition(500ms ease-out)
+              input[type='text']
+                border: none
+                background: none
+                overflow: hidden;
+                width: 100%
+                position: absolute
+                z-index: 1
+                border: 0
+                margin: 0
+                padding: 0
+                color: rgb(95, 181, 252)
+                &:focus,
+                &:active
+                  outline: none
 
-      .form
-        position: absolute
-        top: 5px
-        left: 5px
-        font:
-          family:'Kaushan Script', cursive
-          size: 18px
+              .underline
+                display: inline-block
+                width: 100%
+                position: relative
+                top: 1px
+                height: 1px
+                background-color: #a4a4a4
 
-        .dear
-          font:
-            size: 23px
+      .linewrapper_2
+        @extend .linewrapper
 
-        form
+        .textFillsWidth
+          width: 47% !important
+          display: table-cell
 
-          textarea
-            color: rgb(42, 126, 180)
-            width: 90%
-            height: 160px
-            position: relative
-            margin-left: 15px
-            margin-top: 10px
-            &:focus,
-            &:active
-              outline: none !important
-            background: transparent
-            border: 1px solid rgb(205, 142, 0)
-          input
-            border: none
-            border-bottom: 1px solid rgb(205, 142, 0)
-            color: rgb(42, 126, 180)
-            &:focus,
-            &:active
-              outline: none !important
-            background: transparent
-      &:hover
-        top: -70px
+      .mailWrapper
+        position: relative
+        left: 10px
+        top: -5px
+        textarea
+          resize: none
+          overflow: hidden
+          width: 100%
+          font-family:'Kaushan Script', cursive
+          font-size: 17px
+          position: absolute
+          color: rgb(95, 181, 252)
+          border: none
+          background: none
+          &:focus,
+          &:active
+            outline: none
 
+        .underline
+          display: inline-block
+          width: 100%
+          position: relative
+          top: 1px
+          height: 1px
+          background-color: #a4a4a4
 
+        .underline_2
+          @extend .underline
+          top: -13px !important
 
-    .for-g
-      position: relative
-      z-index: 100
-      top: -190px
+        .underline_3
+          @extend .underline
+          top: -6px
 
-    .for-g-2
-      position: relative
-      z-index: 100
-      top: -190px
+        button
+          font-family: 'Kaushan Script', cursive
+          position: relative
+          left: 42%
+          z-index: 3
 
-    .bottom
-      position: relative
+  .back-ground
+    position: absolute
+    left: -89px
+    top: 26px
+
+  .fore-ground
+    position: relative
+    display: table
+    z-index: 2
+    left: 43px
+    top: -17px
