@@ -7,10 +7,11 @@ section
   height: 612px
   background: url('../pictures/bg.jpg')
   margin: 1px auto
-  box-shadow: 0px 0px 20px black
+  box-shadow: 0px 5px 20px black
   .before
     +position(absolute, 0px 0px 0px 0px)
-    opacity: 0.7
+    opacity: 0.5
+    +transition(200ms, linear)
 
   @media (max-width: 768px)
     height: 1200px

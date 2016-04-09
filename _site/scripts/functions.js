@@ -46,36 +46,58 @@ function hoverBurger() {
 
 $(function () {
 
-$('.thumb-overlay:eq(0)').on('mouseover', posit);
+$('.img-1').on('mouseover', posit);
+$('.img-1').on('mouseleave', changeColor);
 
 function posit() {
   $('.before').css('background', 'rgb(16, 224, 175)');
 };
 
-$('.thumb-overlay:eq(1)').on('mouseover', posit_1);
+function changeColor() {
+  $('.before').css('background', 'transparent');
+};
+
+
+
+$('.img-2').on('mouseover', posit_1);
+$('.img-2').on('mouseleave', changeColor_2);
 
 function posit_1() {
   $('.before').css('background', 'rgb(254, 186, 229)');
 };
 
+function changeColor_2() {
+  $('.before').css('background', 'transparent');
+};
 
-$('.thumb-overlay:eq(2)').on('mouseover', posit_2);
+
+$('.img-3').on('mouseover', posit_2);
+$('.img-3').on('mouseleave', changeColor_3);
 
 function posit_2() {
   $('.before').css('background', 'rgb(41, 229, 255)');
 };
 
-$('.thumb-overlay:eq(3)').on('mouseover', posit_3);
+function changeColor_3() {
+  $('.before').css('background', 'transparent');
+};
+
+$('.img-4').on('mouseover', posit_3);
+$('.img-4').on('mouseleave', changeColor_4);
 
 function posit_3() {
   $('.before').css('background', '#fea84f');
 };
 
-$('.before').on('mouseover', transp);
 
-function transp() {
+function changeColor_4() {
   $('.before').css('background', 'transparent');
 };
+// $('.before').on('mouseover', transp);
+//
+// function transp() {
+//   $('.before').css('background', 'transparent');
+// };
 
 });
 
@@ -131,6 +153,36 @@ top: '150px'
 };
 
 
+
+
+});
+
+
+$(function () {
+
+$('.tech-use').on('click', moveTech);
+$('.tech-bg').on('click', moveBack);
+
+  function moveTech() {
+
+    $('.langs').css('left', '0%');
+    $('.tech-bg').css({
+      left: '-40%',
+      transition: '1200ms'
+    });
+
+  };
+
+  function moveBack() {
+
+    $('.langs').css('left', '40%');
+    $('.tech-bg').css({
+      left: '0px',
+      transition: '500ms'
+
+    });
+
+  };
 
 
 });
