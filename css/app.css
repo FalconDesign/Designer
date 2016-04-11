@@ -579,17 +579,67 @@ section .container .img-4:hover .thumb-overlay {
 
 .tech-section .tech-use {
   position: absolute;
+  cursor: pointer;
   top: 330px;
   left: 80px;
   padding-left: 10px;
   padding-right: 10px;
   display: table;
   border: 7px solid white;
-  color: #77ceed;
+  color: white;
   text-shadow: 0px 1px 2px #333333;
   box-shadow: 0px 2px 2px #333333;
   font-size: 40px;
   font-family: 'commandocommando', cursive;
+}
+
+.tech-section .watch {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  top: 325px;
+  left: 630px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #3e3854;
+  font-size: 23px;
+  font-family: 'Kaushan Script', cursive;
+  cursor: pointer;
+}
+
+.tech-section .watch:hover {
+  color: #77ceed;
+}
+
+.tech-section .watch .cont {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
 }
 
 .tech-section .langs {
@@ -606,6 +656,52 @@ section .container .img-4:hover .thumb-overlay {
   -webkit-transition: 500ms;
   -moz-transition: 500ms;
   transition: 500ms;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+}
+
+.tech-section .langs a:hover {
+  color: #77ceed;
+}
+
+.tech-section .langs .box {
+  color: white;
+  font-size: 40px;
+  font-family: 'commandocommando', cursive;
+  text-decoration: none;
 }
 
 @font-face {

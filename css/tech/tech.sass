@@ -21,20 +21,48 @@
 
 
 
+
   .tech-use
     position: absolute
+    cursor: pointer
     top: 330px
     left: 80px
     padding-left: 10px
     padding-right: 10px
     display: table
     border: 7px solid white
-    color: rgb(119, 206, 237)
+    color: white
     text-shadow: 0px 1px 2px rgb(51, 51, 51)
     box-shadow: 0px 2px 2px rgb(51, 51, 51)
     font:
       size: 40px
       family: 'commandocommando', cursive
+
+
+
+  .watch
+    border-radius: 50%
+    +size(80px)
+    position: absolute
+    top: 325px
+    left: 630px
+    background: rgba(255, 255, 255, 0.1)
+    color: #3e3854
+    font:
+      size: 23px
+      family: 'Kaushan Script', cursive
+    cursor: pointer
+    &:hover
+      color: rgb(119, 206, 237)
+
+    .cont
+      width: 80px
+      height: 80px
+      border-radius: 50%
+      +display(flex)
+      +justify-content(center)
+      +align-items(center)
+
 
   .langs
     width: 40%
@@ -48,3 +76,17 @@
     background-size: cover
     background-repeat: no-repeat
     +transition(500ms)
+    +display(flex)
+    +justify-content(center)
+    +flex-direction(column)
+    +align-items(center)
+
+    a
+      &:hover
+        color: rgb(119, 206, 237)
+
+    .box
+      color: white
+      font-size: 40px
+      font-family: 'commandocommando', cursive
+      text-decoration: none
