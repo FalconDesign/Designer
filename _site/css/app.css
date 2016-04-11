@@ -366,13 +366,13 @@ section .before {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 0.5;
-  -webkit-transition: 200ms, linear;
-  -moz-transition: 200ms, linear;
-  transition: 200ms, linear;
+  opacity: 0.7;
+  -webkit-transition: 200ms;
+  -moz-transition: 200ms;
+  transition: 200ms;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 835px) {
   section {
     height: 1200px;
   }
@@ -391,7 +391,7 @@ section .vine {
   left: 45px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 835px) {
   section .vine {
     left: 0px !important;
     width: 100% !important;
@@ -426,9 +426,10 @@ section .vine iframe {
 }
 
 section .container {
-  margin-left: 390px;
+  display: table;
+  margin-left: 370px;
+  width: 65%;
   margin-top: 60px;
-  max-width: 755px;
 }
 
 section .container::after {
@@ -437,7 +438,19 @@ section .container::after {
   display: table;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
+  section .container {
+    width: 60%;
+  }
+}
+
+@media (max-width: 950px) {
+  section .container {
+    width: 55%;
+  }
+}
+
+@media (max-width: 835px) {
   section .container {
     position: absolute;
     top: 520px;
@@ -489,7 +502,7 @@ section .container .thumb-overlay {
   -ms-flex-align: center;
 }
 
-@media (max-width: 890px) and (min-width: 768px) {
+@media (max-width: 890px) and (min-width: 835px) {
   section .container .thumb-overlay {
     font-size: 29px;
   }
@@ -578,10 +591,11 @@ section .container .img-4:hover .thumb-overlay {
 }
 
 .tech-section .tech-use {
-  position: absolute;
+  text-align: center;
+  position: relative;
+  top: -403px;
   cursor: pointer;
-  top: 330px;
-  left: 80px;
+  left: 5%;
   padding-left: 10px;
   padding-right: 10px;
   display: table;
@@ -593,14 +607,28 @@ section .container .img-4:hover .thumb-overlay {
   font-family: 'commandocommando', cursive;
 }
 
+@media (max-width: 999px) {
+  .tech-section .tech-use {
+    left: 1% !important;
+    box-shadow: none !important;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 906px) {
+  .tech-section .tech-use {
+    border: none;
+  }
+}
+
 .tech-section .watch {
   border-radius: 50%;
   height: 80px;
   width: 80px;
   position: absolute;
+  left: 52%;
   top: 325px;
-  left: 630px;
-  background: rgba(255, 255, 255, 0.1);
+  background: white;
   color: #3e3854;
   font-size: 23px;
   font-family: 'Kaushan Script', cursive;
@@ -609,6 +637,20 @@ section .container .img-4:hover .thumb-overlay {
 
 .tech-section .watch:hover {
   color: #77ceed;
+}
+
+@media (max-width: 1170px) {
+  .tech-section .watch {
+    top: 441px !important;
+    left: 26% !important;
+  }
+}
+
+@media (max-width: 580px) {
+  .tech-section .watch {
+    top: 441px !important;
+    left: 22% !important;
+  }
 }
 
 .tech-section .watch .cont {
@@ -702,6 +744,24 @@ section .container .img-4:hover .thumb-overlay {
   font-size: 40px;
   font-family: 'commandocommando', cursive;
   text-decoration: none;
+}
+
+@media (max-width: 650px) {
+  .tech-section .langs .box {
+    font-size: 30px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .tech-section .langs .box {
+    font-size: 25px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .tech-section .langs .box {
+    font-size: 20px !important;
+  }
 }
 
 @font-face {
