@@ -20,6 +20,11 @@
     size: cover
   box-shadow: 0px 0px 20px black
 
+  @media (max-width: 635px)
+    +display(flex)
+    +justify-content(center)
+    +align-items(center)
+
   .letter
     display: table
     position: relative
@@ -27,61 +32,66 @@
     top: 150px
     +transition(400ms, linear)
 
-    .letter-content
-      width: 339px
-      position: absolute
-      top: 20px
-      left: 10px
+    @media (max-width: 635px)
+      display: none
+
+    form.letter-content
+      display: block !important
+      width: 339px !important
+      position: absolute !important
+      top: 20px !important
+      left: 10px !important
+      color: black !important
       font:
-        size: 22px
+        size: 22px !important
 
       .dear-dl
-        font-family:'Kaushan Script', cursive
+        font-family:'Kaushan Script', cursive !important
 
       .linewrapper
-        display: table
-        position: relative
-        left: 10px
+        display: table !important
+        position: relative !important
+        left: 10px !important
 
         .line
-          display: table-row
+          display: table-row !important
 
           .text
-            display: table-cell
-            font-family:'Kaushan Script', cursive
-            font-size: 17px
+            display: table-cell !important
+            font-family:'Kaushan Script', cursive !important
+            font-size: 17px !important
 
 
           .textFillsWidth
-            width: 50%
-            display: table-cell
+            width: 47% !important
+            display: table-cell !important
 
             .textContent
-              position: relative
-              margin-right: 2px
+              position: relative !important
+              margin-right: 2px !important
 
               input[type='text']
-                border: none
-                background: none
-                overflow: hidden;
-                width: 100%
-                position: absolute
-                z-index: 1
-                border: 0
-                margin: 0
-                padding: 0
-                color: rgb(95, 181, 252)
+                border: none !important
+                background: none !important
+                overflow: hidden !important
+                width: 100% !important
+                position: absolute !important
+                z-index: 1 !important
+                border: 0 !important
+                margin: 0 !important
+                padding: 0 !important
+                color: rgb(95, 181, 252) !important
                 &:focus,
                 &:active
-                  outline: none
+                  outline: none !important
 
               .underline
-                display: inline-block
-                width: 100%
-                position: relative
-                top: 1px
-                height: 1px
-                background-color: #a4a4a4
+                display: inline-block !important
+                width: 100% !important
+                position: relative !important
+                top: 1px !important
+                height: 1px !important
+                background-color: #a4a4a4 !important
 
       .linewrapper_2
         @extend .linewrapper
@@ -131,17 +141,31 @@
           z-index: 3
 
   .back-ground
+    width: 90%
     position: absolute
     left: -89px
     top: 26px
 
+
+    @media (max-width: 635px)
+      display: none
+
   .hello
+    display: table
     position: absolute
-    left: 499px
+    left: 41%
     top: 50px
     z-index: 2
 
+    @media (max-width: 1060px)
+      img
+        display: none
+      .hello-text
+        top: 100px !important
+        color: white
+
     .hello-text
+      display: table
       max-width: 186px
       position: relative
       top: -247px
@@ -151,9 +175,49 @@
         family: 'Oswald', sans-serif
         size: 31px
 
+      @media (max-width: 940px)
+        display: none
+
   .fore-ground
     position: relative
     display: table
     z-index: 2
     left: 43px
     top: -17px
+
+    @media (max-width: 635px)
+      display: none
+
+
+  .dear-responsive
+    display: none
+    top: 20px
+    position: absolute
+    color: white
+    font:
+      size: 30px
+      family: 'Kaushan Script', cursive
+    @media (max-width: 635px)
+      display: block
+
+
+  form
+    width: 70%
+    color: white
+    display: none
+    font:
+      family: 'Kaushan Script', cursive
+
+    @media (max-width: 635px)
+      display: block
+
+    label
+      font:
+        size: 20px
+      color: rgb(95, 181, 252)
+
+    input[type='text']
+      width: 100%
+      margin: 0px !important
+    textarea
+      resize:none !important

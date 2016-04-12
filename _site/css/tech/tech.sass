@@ -43,9 +43,12 @@
       left: 1% !important
       box-shadow: none !important
       max-width: 600px
+      display: block !important
 
-    @media (max-width: 906px)
+    @media (max-width: 999px)
       border: none
+
+
 
 
   .watch
@@ -68,9 +71,12 @@
       left: 26% !important
 
     @media (max-width: 580px)
-      top: 441px !important
-      left: 22% !important
+      top: 241px !important
+      left: 21% !important
 
+    @media (max-width: 450px)
+      top: 241px !important
+      left: 20% !important
 
     .cont
       width: 80px
@@ -103,6 +109,9 @@
         color: rgb(119, 206, 237)
 
     .box
+      position: relative
+      z-index: 2
+      +display(flex)
       color: white
       font-size: 40px
       font-family: 'commandocommando', cursive

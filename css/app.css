@@ -193,6 +193,36 @@ section .container .img-4:hover .thumb-overlay {
   box-shadow: 0px 0px 20px black;
 }
 
+@media (max-width: 635px) {
+  .contact-section {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+  }
+}
+
 .contact-section .letter {
   display: table;
   position: relative;
@@ -203,82 +233,90 @@ section .container .img-4:hover .thumb-overlay {
   transition: 400ms, linear;
 }
 
-.contact-section .letter .letter-content {
-  width: 339px;
-  position: absolute;
-  top: 20px;
-  left: 10px;
-  font-size: 22px;
+@media (max-width: 635px) {
+  .contact-section .letter {
+    display: none;
+  }
 }
 
-.contact-section .letter .letter-content .dear-dl {
-  font-family: 'Kaushan Script', cursive;
+.contact-section .letter form.letter-content {
+  display: block !important;
+  width: 339px !important;
+  position: absolute !important;
+  top: 20px !important;
+  left: 10px !important;
+  color: black !important;
+  font-size: 22px !important;
 }
 
-.contact-section .letter .letter-content .linewrapper, .contact-section .letter .letter-content .linewrapper_2 {
-  display: table;
-  position: relative;
-  left: 10px;
+.contact-section .letter form.letter-content .dear-dl {
+  font-family: 'Kaushan Script', cursive !important;
 }
 
-.contact-section .letter .letter-content .linewrapper .line, .contact-section .letter .letter-content .linewrapper_2 .line {
-  display: table-row;
+.contact-section .letter form.letter-content .linewrapper, .contact-section .letter form.letter-content .linewrapper_2 {
+  display: table !important;
+  position: relative !important;
+  left: 10px !important;
 }
 
-.contact-section .letter .letter-content .linewrapper .line .text, .contact-section .letter .letter-content .linewrapper_2 .line .text {
-  display: table-cell;
-  font-family: 'Kaushan Script', cursive;
-  font-size: 17px;
+.contact-section .letter form.letter-content .linewrapper .line, .contact-section .letter form.letter-content .linewrapper_2 .line {
+  display: table-row !important;
 }
 
-.contact-section .letter .letter-content .linewrapper .line .textFillsWidth, .contact-section .letter .letter-content .linewrapper_2 .line .textFillsWidth {
-  width: 50%;
-  display: table-cell;
+.contact-section .letter form.letter-content .linewrapper .line .text, .contact-section .letter form.letter-content .linewrapper_2 .line .text {
+  display: table-cell !important;
+  font-family: 'Kaushan Script', cursive !important;
+  font-size: 17px !important;
 }
 
-.contact-section .letter .letter-content .linewrapper .line .textFillsWidth .textContent, .contact-section .letter .letter-content .linewrapper_2 .line .textFillsWidth .textContent {
-  position: relative;
-  margin-right: 2px;
+.contact-section .letter form.letter-content .linewrapper .line .textFillsWidth, .contact-section .letter form.letter-content .linewrapper_2 .line .textFillsWidth {
+  width: 47% !important;
+  display: table-cell !important;
 }
 
-.contact-section .letter .letter-content .linewrapper .line .textFillsWidth .textContent input[type='text'], .contact-section .letter .letter-content .linewrapper_2 .line .textFillsWidth .textContent input[type='text'] {
-  border: none;
-  background: none;
-  overflow: hidden;
-  width: 100%;
-  position: absolute;
-  z-index: 1;
-  border: 0;
-  margin: 0;
-  padding: 0;
-  color: #5fb5fc;
+.contact-section .letter form.letter-content .linewrapper .line .textFillsWidth .textContent, .contact-section .letter form.letter-content .linewrapper_2 .line .textFillsWidth .textContent {
+  position: relative !important;
+  margin-right: 2px !important;
 }
 
-.contact-section .letter .letter-content .linewrapper .line .textFillsWidth .textContent input[type='text']:focus, .contact-section .letter .letter-content .linewrapper_2 .line .textFillsWidth .textContent input[type='text']:focus, .contact-section .letter .letter-content .linewrapper .line .textFillsWidth .textContent input[type='text']:active, .contact-section .letter .letter-content .linewrapper_2 .line .textFillsWidth .textContent input[type='text']:active {
-  outline: none;
+.contact-section .letter form.letter-content .linewrapper .line .textFillsWidth .textContent input[type='text'], .contact-section .letter form.letter-content .linewrapper_2 .line .textFillsWidth .textContent input[type='text'] {
+  border: none !important;
+  background: none !important;
+  overflow: hidden !important;
+  width: 100% !important;
+  position: absolute !important;
+  z-index: 1 !important;
+  border: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: #5fb5fc !important;
 }
 
-.contact-section .letter .letter-content .linewrapper .line .textFillsWidth .textContent .underline, .contact-section .letter .letter-content .linewrapper_2 .line .textFillsWidth .textContent .underline, .contact-section .letter .letter-content .linewrapper .line .textFillsWidth .textContent .mailWrapper .underline_2, .contact-section .letter .letter-content .mailWrapper .linewrapper .line .textFillsWidth .textContent .underline_2, .contact-section .letter .letter-content .linewrapper_2 .line .textFillsWidth .textContent .mailWrapper .underline_2, .contact-section .letter .letter-content .mailWrapper .linewrapper_2 .line .textFillsWidth .textContent .underline_2, .contact-section .letter .letter-content .linewrapper .line .textFillsWidth .textContent .mailWrapper .underline_3, .contact-section .letter .letter-content .mailWrapper .linewrapper .line .textFillsWidth .textContent .underline_3, .contact-section .letter .letter-content .linewrapper_2 .line .textFillsWidth .textContent .mailWrapper .underline_3, .contact-section .letter .letter-content .mailWrapper .linewrapper_2 .line .textFillsWidth .textContent .underline_3 {
-  display: inline-block;
-  width: 100%;
-  position: relative;
-  top: 1px;
-  height: 1px;
-  background-color: #a4a4a4;
+.contact-section .letter form.letter-content .linewrapper .line .textFillsWidth .textContent input[type='text']:focus, .contact-section .letter form.letter-content .linewrapper_2 .line .textFillsWidth .textContent input[type='text']:focus, .contact-section .letter form.letter-content .linewrapper .line .textFillsWidth .textContent input[type='text']:active, .contact-section .letter form.letter-content .linewrapper_2 .line .textFillsWidth .textContent input[type='text']:active {
+  outline: none !important;
 }
 
-.contact-section .letter .letter-content .linewrapper_2 .textFillsWidth {
+.contact-section .letter form.letter-content .linewrapper .line .textFillsWidth .textContent .underline, .contact-section .letter form.letter-content .linewrapper_2 .line .textFillsWidth .textContent .underline, .contact-section .letter form.letter-content .linewrapper .line .textFillsWidth .textContent .mailWrapper .underline_2, .contact-section .letter form.letter-content .mailWrapper .linewrapper .line .textFillsWidth .textContent .underline_2, .contact-section .letter form.letter-content .linewrapper_2 .line .textFillsWidth .textContent .mailWrapper .underline_2, .contact-section .letter form.letter-content .mailWrapper .linewrapper_2 .line .textFillsWidth .textContent .underline_2, .contact-section .letter form.letter-content .linewrapper .line .textFillsWidth .textContent .mailWrapper .underline_3, .contact-section .letter form.letter-content .mailWrapper .linewrapper .line .textFillsWidth .textContent .underline_3, .contact-section .letter form.letter-content .linewrapper_2 .line .textFillsWidth .textContent .mailWrapper .underline_3, .contact-section .letter form.letter-content .mailWrapper .linewrapper_2 .line .textFillsWidth .textContent .underline_3 {
+  display: inline-block !important;
+  width: 100% !important;
+  position: relative !important;
+  top: 1px !important;
+  height: 1px !important;
+  background-color: #a4a4a4 !important;
+}
+
+.contact-section .letter form.letter-content .linewrapper_2 .textFillsWidth {
   width: 47% !important;
   display: table-cell;
 }
 
-.contact-section .letter .letter-content .mailWrapper {
+.contact-section .letter form.letter-content .mailWrapper {
   position: relative;
   left: 10px;
   top: -5px;
 }
 
-.contact-section .letter .letter-content .mailWrapper textarea {
+.contact-section .letter form.letter-content .mailWrapper textarea {
   resize: none;
   overflow: hidden;
   width: 100%;
@@ -290,11 +328,11 @@ section .container .img-4:hover .thumb-overlay {
   background: none;
 }
 
-.contact-section .letter .letter-content .mailWrapper textarea:focus, .contact-section .letter .letter-content .mailWrapper textarea:active {
+.contact-section .letter form.letter-content .mailWrapper textarea:focus, .contact-section .letter form.letter-content .mailWrapper textarea:active {
   outline: none;
 }
 
-.contact-section .letter .letter-content .mailWrapper .underline, .contact-section .letter .letter-content .mailWrapper .underline_2, .contact-section .letter .letter-content .mailWrapper .underline_3 {
+.contact-section .letter form.letter-content .mailWrapper .underline, .contact-section .letter form.letter-content .mailWrapper .underline_2, .contact-section .letter form.letter-content .mailWrapper .underline_3 {
   display: inline-block;
   width: 100%;
   position: relative;
@@ -303,15 +341,15 @@ section .container .img-4:hover .thumb-overlay {
   background-color: #a4a4a4;
 }
 
-.contact-section .letter .letter-content .mailWrapper .underline_2 {
+.contact-section .letter form.letter-content .mailWrapper .underline_2 {
   top: -13px !important;
 }
 
-.contact-section .letter .letter-content .mailWrapper .underline_3 {
+.contact-section .letter form.letter-content .mailWrapper .underline_3 {
   top: -6px;
 }
 
-.contact-section .letter .letter-content .mailWrapper button {
+.contact-section .letter form.letter-content .mailWrapper button {
   font-family: 'Kaushan Script', cursive;
   position: relative;
   left: 42%;
@@ -319,19 +357,38 @@ section .container .img-4:hover .thumb-overlay {
 }
 
 .contact-section .back-ground {
+  width: 90%;
   position: absolute;
   left: -89px;
   top: 26px;
 }
 
+@media (max-width: 635px) {
+  .contact-section .back-ground {
+    display: none;
+  }
+}
+
 .contact-section .hello {
+  display: table;
   position: absolute;
-  left: 499px;
+  left: 41%;
   top: 50px;
   z-index: 2;
 }
 
+@media (max-width: 1060px) {
+  .contact-section .hello img {
+    display: none;
+  }
+  .contact-section .hello .hello-text {
+    top: 100px !important;
+    color: white;
+  }
+}
+
 .contact-section .hello .hello-text {
+  display: table;
   max-width: 186px;
   position: relative;
   top: -247px;
@@ -341,12 +398,66 @@ section .container .img-4:hover .thumb-overlay {
   font-size: 31px;
 }
 
+@media (max-width: 940px) {
+  .contact-section .hello .hello-text {
+    display: none;
+  }
+}
+
 .contact-section .fore-ground {
   position: relative;
   display: table;
   z-index: 2;
   left: 43px;
   top: -17px;
+}
+
+@media (max-width: 635px) {
+  .contact-section .fore-ground {
+    display: none;
+  }
+}
+
+.contact-section .dear-responsive {
+  display: none;
+  top: 20px;
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  font-family: 'Kaushan Script', cursive;
+}
+
+@media (max-width: 635px) {
+  .contact-section .dear-responsive {
+    display: block;
+  }
+}
+
+.contact-section form {
+  width: 70%;
+  color: white;
+  display: none;
+  font-family: 'Kaushan Script', cursive;
+}
+
+@media (max-width: 635px) {
+  .contact-section form {
+    display: block;
+  }
+}
+
+.contact-section form label {
+  font-size: 20px;
+  color: #5fb5fc;
+}
+
+.contact-section form input[type='text'] {
+  width: 100%;
+  margin: 0px !important;
+}
+
+.contact-section form textarea {
+  resize: none !important;
 }
 
 section {
@@ -612,10 +723,11 @@ section .container .img-4:hover .thumb-overlay {
     left: 1% !important;
     box-shadow: none !important;
     max-width: 600px;
+    display: block !important;
   }
 }
 
-@media (max-width: 906px) {
+@media (max-width: 999px) {
   .tech-section .tech-use {
     border: none;
   }
@@ -648,8 +760,15 @@ section .container .img-4:hover .thumb-overlay {
 
 @media (max-width: 580px) {
   .tech-section .watch {
-    top: 441px !important;
-    left: 22% !important;
+    top: 241px !important;
+    left: 21% !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .tech-section .watch {
+    top: 241px !important;
+    left: 20% !important;
   }
 }
 
@@ -740,6 +859,15 @@ section .container .img-4:hover .thumb-overlay {
 }
 
 .tech-section .langs .box {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
   color: white;
   font-size: 40px;
   font-family: 'commandocommando', cursive;
@@ -925,6 +1053,10 @@ header .burger span::after {
   font-family: 'Open Sans', sans-serif !important;
   font-size: 15px;
   font-weight: bold;
+}
+
+.logo nav a:hover {
+  color: #b7e7f4;
 }
 
 .main-image {

@@ -1,0 +1,48 @@
+.contact-section#CONTACT
+  .hello
+    img(src="pictures/hello.png")
+    .hello-text Hello there. You might want to  be  in touch with Dima!?
+  .back-ground
+    img(src="pictures/neon-bg.png")
+  .letter
+    img(src="pictures/letter.png")
+    form.letter-content(action="https://formspree.io/hebgax0@gmail.com", method="POST")
+      .dear-dl Dear Dmitry...
+      .linewrapper
+        .line
+          .text My name is...&nbsp;
+          .text.textFillsWidth
+            .textContent
+              input(type="text", name='name')
+              .underline
+          .text , ucan mail
+      .linewrapper_2
+        .line
+          .text me back at&nbsp;
+          .text.textFillsWidth
+            .textContent
+              input(type="text", name='_replyto') 
+              .underline
+          .text . I would like to
+      .mailWrapper
+        textarea.inp
+        .underline
+        .underline_3
+        button.btn.btn-success(type='submit', value='Send') Send
+  .fore-ground
+    img(src="pictures/neon-fore.png")      
+  
+  .dear-responsive Dear Dmitry...  
+          
+  form(action="https://formspree.io/hebgax0@gmail.com", method="POST").form-horizontal
+    .form-group
+        label.col-sm-2.control-label My name is :
+        input(type="text", name='name').form-control
+    .form-group
+        label.col-sm-2.control-label My Email Adress is :
+        input(type='email', name='_replyto').form-control
+    .form-group
+        label.col-sm-2.control-label I would Like to...
+        textarea(rows='7').form-control   
+    .form-group    
+        input(type='submit', value='Send').btn.btn-success
