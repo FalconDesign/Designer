@@ -166,6 +166,7 @@
 
     .hello-text
       display: table
+      width: 186px
       max-width: 186px
       position: relative
       top: -247px
@@ -190,6 +191,7 @@
 
 
   .dear-responsive
+    width: 100%
     display: none
     top: 20px
     position: absolute
@@ -198,10 +200,13 @@
       size: 30px
       family: 'Kaushan Script', cursive
     @media (max-width: 635px)
-      display: block
+      +display(flex)
+      +justify-content(center)
+
 
 
   form
+    +display(flex)
     width: 70%
     color: white
     display: none

@@ -389,6 +389,7 @@ section .container .img-4:hover .thumb-overlay {
 
 .contact-section .hello .hello-text {
   display: table;
+  width: 186px;
   max-width: 186px;
   position: relative;
   top: -247px;
@@ -419,6 +420,7 @@ section .container .img-4:hover .thumb-overlay {
 }
 
 .contact-section .dear-responsive {
+  width: 100%;
   display: none;
   top: 20px;
   position: absolute;
@@ -429,11 +431,33 @@ section .container .img-4:hover .thumb-overlay {
 
 @media (max-width: 635px) {
   .contact-section .dear-responsive {
-    display: block;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
   }
 }
 
 .contact-section form {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
   width: 70%;
   color: white;
   display: none;
@@ -496,6 +520,13 @@ section .before {
 }
 
 section .vine {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
   z-index: 5;
   top: 65px;
@@ -534,6 +565,7 @@ section .vine {
 
 section .vine iframe {
   width: 300px;
+  height: 484px;
 }
 
 section .container {
@@ -705,7 +737,6 @@ section .container .img-4:hover .thumb-overlay {
   text-align: center;
   position: relative;
   top: -403px;
-  cursor: pointer;
   left: 5%;
   padding-left: 10px;
   padding-right: 10px;
@@ -724,6 +755,12 @@ section .container .img-4:hover .thumb-overlay {
     box-shadow: none !important;
     max-width: 600px;
     display: block !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .tech-section .tech-use {
+    left: 19% !important;
   }
 }
 
@@ -758,17 +795,21 @@ section .container .img-4:hover .thumb-overlay {
   }
 }
 
+@media (max-width: 600px) {
+  .tech-section .watch {
+    left: 42% !important;
+  }
+}
+
 @media (max-width: 580px) {
   .tech-section .watch {
     top: 241px !important;
-    left: 21% !important;
   }
 }
 
 @media (max-width: 450px) {
   .tech-section .watch {
     top: 241px !important;
-    left: 20% !important;
   }
 }
 
@@ -905,6 +946,7 @@ body {
   background: url("../pictures/space-big.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-font-smoothing: antialiased;
 }
 
 header {

@@ -63,7 +63,7 @@ $('.img-2').on('mouseover', posit_1);
 $('.img-2').on('mouseleave', changeColor_2);
 
 function posit_1() {
-  $('.before').css('background', 'white');
+  $('.before').css('background', 'rgb(255, 129, 227)');
 };
 
 function changeColor_2() {
@@ -86,7 +86,7 @@ $('.img-4').on('mouseover', posit_3);
 $('.img-4').on('mouseleave', changeColor_4);
 
 function posit_3() {
-  $('.before').css('background', 'rgb(48, 67, 194)');
+  $('.before').css('background', 'rgb(93, 183, 195)');
 };
 
 
@@ -167,7 +167,6 @@ $('.cont:eq(1)').on('click', moveTech);
 $('.cont:eq(0)').on('click', moveBack);
 
   function moveTech() {
-
     $('.langs').css('left', '0%');
     $('.tech-bg').css({
       left: '-40%',
@@ -269,3 +268,11 @@ $(function() {
   };
 
 })
+
+
+
+
+$('iframe').flexslider({
+  animation: "slide",     
+  video: true
+});
