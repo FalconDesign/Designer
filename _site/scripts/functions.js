@@ -11,7 +11,7 @@
 
 $(window).load( function () {
 
-  $('.spinner').hide(200);
+  $('.spinner, .some').hide();
    document.querySelector('.header-1').classList.add('animation');
    document.querySelector('.header-2').classList.add('animation');
    document.querySelector('.header-3').classList.add('animation');
@@ -215,6 +215,7 @@ $('.cont:eq(0)').on('click', moveBack);
 $(function () {
 
   jQuery(".tech-use").fitText(1, { minFontSize: '25px', maxFontSize: '40px' });
+  jQuery(".some").fitText(1, { minFontSize: '25px', maxFontSize: '50px' });
 
 });
 
