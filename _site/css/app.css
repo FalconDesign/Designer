@@ -420,7 +420,7 @@ section .container .img-4:hover .thumb-overlay {
 }
 
 .contact-section .dear-responsive {
-  width: 100%;
+  width: 70%;
   display: none;
   top: 20px;
   position: absolute;
@@ -758,12 +758,6 @@ section .container .img-4:hover .thumb-overlay {
   }
 }
 
-@media (max-width: 600px) {
-  .tech-section .tech-use {
-    left: 19% !important;
-  }
-}
-
 @media (max-width: 999px) {
   .tech-section .tech-use {
     border: none;
@@ -795,21 +789,17 @@ section .container .img-4:hover .thumb-overlay {
   }
 }
 
-@media (max-width: 600px) {
-  .tech-section .watch {
-    left: 42% !important;
-  }
-}
-
 @media (max-width: 580px) {
   .tech-section .watch {
     top: 241px !important;
+    left: 21% !important;
   }
 }
 
 @media (max-width: 450px) {
   .tech-section .watch {
     top: 241px !important;
+    left: 20% !important;
   }
 }
 
@@ -939,6 +929,16 @@ section .container .img-4:hover .thumb-overlay {
   src: url("fonts/commando-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/commando-webfont.woff") format("woff"), url("fonts/commando-webfont.ttf") format("truetype"), url("fonts/commando-webfont.svg#commandocommando") format("svg");
   font-weight: normal;
   font-style: normal;
+}
+
+.spinner {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url("../pictures/space.gif") center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 999;
 }
 
 body {
