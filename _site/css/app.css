@@ -1246,18 +1246,19 @@ header .burger span::after {
   font-weight: 900;
   font-family: 'Passion One', cursive;
   font-style: italic;
+  animation-delay: 0.2s !important;
 }
 
 .header .header-2 {
   color: #b7e7f4 !important;
   -webkit-animation-delay: 0.2s !important;
-  animation-delay: 0.2s !important;
+  animation-delay: 0.4s !important;
 }
 
 .header .header-3 {
   color: #b7e7f4 !important;
   -webkit-animation-delay: 0.4s !important;
-  animation-delay: 0.4s !important;
+  animation-delay: 0.6s !important;
 }
 
 @media only screen and (max-width: 840px) {
