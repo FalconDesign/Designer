@@ -274,11 +274,3 @@ $(function() {
   };
 
 })
-
-
-
-
-$('iframe').flexslider({
-  animation: "slide",
-  video: true
-});
