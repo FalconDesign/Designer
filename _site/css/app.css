@@ -645,9 +645,9 @@ section .container .thumb-overlay {
   -ms-flex-align: center;
 }
 
-@media (max-width: 890px) and (min-width: 835px) {
+@media (max-width: 890px) and (min-width: 400px) {
   section .container .thumb-overlay {
-    font-size: 29px;
+    font-size: 25px;
   }
 }
 
